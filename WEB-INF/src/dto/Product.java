@@ -7,7 +7,7 @@ public class Product implements Serializable { // 인터페이스 선언
 
 	private String productId;	//게임 아이디
 	private String pname;		//게임 명
-	private Integer unitPrice; //게임 가격
+	private String unitPrice; //게임 가격
 	private String description; //게임 설명
 	private String manufacturer;//제작사
 	private String category; 	//분류
@@ -18,7 +18,7 @@ public class Product implements Serializable { // 인터페이스 선언
 		super();
 	}
 
-	public Product(String productId, String pname, Integer unitPrice) {
+	public Product(String productId, String pname, String unitPrice) {
 		this.productId = productId;
 		this.pname = pname;
 		this.unitPrice = unitPrice;
@@ -32,7 +32,7 @@ public class Product implements Serializable { // 인터페이스 선언
 		return pname;
 	}
 
-    	public void setPname(String pname) {
+    public void setPname(String pname) {
 		this.pname = pname;
 	}
 
@@ -40,11 +40,11 @@ public class Product implements Serializable { // 인터페이스 선언
 		this.productId = productId;
 	}
 
-	public Integer getUnitPrice() {
+	public String getUnitPrice() {
 		return unitPrice;
 	}
 
-	public void setUnitPrice(Integer unitPrice) {
+	public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 

@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script> window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0") </script>
 
-    <title>방갑습니다. 개인 쇼핑몰 사이트입니다.</title>
+    <title>GAMPANG</title>
 </head>
 <body>
     <%@ include file="top_banner.jsp" %>
