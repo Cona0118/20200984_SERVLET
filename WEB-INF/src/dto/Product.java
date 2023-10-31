@@ -12,6 +12,8 @@ public class Product implements Serializable { // 인터페이스 선언
 	private String manufacturer;//제작사
 	private String category; 	//분류
 	private long userInGame; //유저수
+    
+    private String filename; 	// 파일 이름 변수
 
 
 	public Product() {
@@ -79,5 +81,13 @@ public class Product implements Serializable { // 인터페이스 선언
 	public void setUserInGame(long userInGame) {
 		this.userInGame = userInGame;
 	}
+    
+    public void setFilename(String filename) { // 파일 이름 설정
+	this.filename = filename;
+    }
+
+    public String getFilename() { // 파일 이름 리턴
+	return filename;
+    }
 
 }
