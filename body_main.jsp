@@ -6,7 +6,7 @@
     String tagline = "겜팡은 게임 소개 플렛폼입니다";%>
 <div class="jumbotron">
     <div class="container">
-        <h1 class="display-3, text-center">
+        <h1 class="display-2, text-center">
             <%=greeting%>
         </h1>
     </div>
@@ -49,13 +49,14 @@
             <div class="card bg-dark text-white">
                 <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
-                    <h5 class="card-title">그래픽 카드 이미지 샘플</h5>
+                    <h5 class="card-title">게임 타이틀 이미지</h5>
                     <p class="card-text">출처 : 구글 검색</p>
                 </div>
             </div>
-            <h3><%=product.getPname()%></h3>
+            <h3><%=product.getPname()%></h3> 
             <p><%=product.getDescription()%>
             <p><%=product.getUnitPrice()%>
+            <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
         </div>
         <%
 				}

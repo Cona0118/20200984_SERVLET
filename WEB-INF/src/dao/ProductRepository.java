@@ -42,6 +42,24 @@ public class ProductRepository {
 		LOA.setCategory("MMORPG");
 		LOA.setManufacturer("스마일게이트 RPG");
 		LOA.setUserInGame(112000);
+        
+        Product DNF = new Product("DNF", "던전 앤 파이터", "FREE");
+		DNF.setDescription("다양한 스타일, 매력적인 캐릭터몸을 무기로 싸우는 격투가부터 마법을 자유자재로 사용하는 마법사,총과 검 두 가지 무기를 다루는 총검사, 악을 섬멸하고 아군을 보호하는 프리스트까지! 다양한 캐릭터들이 각기 다른 게임 플레이와 모험을 선사합니다.");
+		DNF.setCategory("MORPG, 벨트스크롤 액션 게임");
+		DNF.setManufacturer("네오플");
+		DNF.setUserInGame(112000000);
+        
+        Product MPS = new Product("MPS", "메이플스토리", "FREE");
+		MPS.setDescription("메이플스토리는 2003년 4월 29일 출시된 2D 횡 스크롤 대규모 다중 사용자 온라인 롤플레잉 게임(MMORPG)입니다. 메이플스토리는 메이플 월드를 배경으로 플레이어가 모험하는 게임입니다. 다른 온라인 RPG 게임처럼 플레이어는 몬스터를 물리치고, 스킬과 능력치를 올릴 수 있습니다.");
+		MPS.setCategory("MMORPG");
+		MPS.setManufacturer("넥슨");
+		MPS.setUserInGame(112003220);
+        
+        Product FCO = new Product("FCO", "FC 온라인", "FREE");
+		FCO.setDescription("EA SPORTS FC ONLINE은 다른 곳에서 경험할 수 없는 최고의 현실감을 구단주님의 PC를 통해 제공합니다. 저희는 현실에 존재하는 다양한 축구 리그, 클럽, 축구 선수의 라이선스를 통해서 구단주님이 원하는 축구의 경험을 마음껏 플레이하실 수 있도록 할 것입니다.");
+		FCO.setCategory("스포츠 게임");
+		FCO.setManufacturer("EA 코리아 스튜디오");
+		FCO.setUserInGame(111232000);
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
@@ -51,10 +69,27 @@ public class ProductRepository {
         listOfProducts.add(DTD);
         listOfProducts.add(DND);
         listOfProducts.add(LOA);
+        listOfProducts.add(DNF);
+        listOfProducts.add(MPS);
+        listOfProducts.add(FCO);
 		// listOfProducts.add(상품명);
 	}
 
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
+    
+    public Product getProductById(String productId) {
+		Product productById = null;
+
+		for (int i = 0; i < listOfProducts.size(); i++) {
+			Product product = listOfProducts.get(i);
+			if (product != null && product.getProductId() != null && product.getProductId().equals(productId)) {
+				productById = product;
+				break;
+			}
+		}
+		return productById;
+	}
+
 }
