@@ -19,7 +19,7 @@
 
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
-	String unitPrice = multi.getParameter("unitPrice");
+	int unitPrice = multi.getParameter("unitPrice");
 	String description = multi.getParameter("description");
 	String manufacturer = multi.getParameter("manufacturer");
 	String category = multi.getParameter("category");
