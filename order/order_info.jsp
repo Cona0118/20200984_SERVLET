@@ -1,5 +1,4 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-
 <html>
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -11,6 +10,7 @@
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
     <script src="../js/order_popup.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../js/order_date.js"></script>
     <title>배송 정보</title>
 </head>
 <body>
@@ -29,13 +29,13 @@
 	      	<input name="name" type="text" class="form-control" />
 	          </div>
 	    </div>
-          <div class="form-group row">
+          <!-- <div class="form-group row">
 	<label class="col-sm-2">배송일</label>
 	<div class="col-sm-3">
 		<input name="shippingDate" type="text" class="form-control" />(yyyy/mm/dd)
 	</div>
 	  </div>
-	 <!-- <div class="form-group row">
+	 <div class="form-group row">
 	   <label class="col-sm-2">국가명</label>
 	     <div class="col-sm-3">
 		    <input name="country" type="text" class="form-control" />
@@ -53,11 +53,29 @@
 		<input name="addressName" type="text" class="form-control" />
 	     </div>
 	</div> -->
-
+    
+    <div class="form-group row">
+	    <label class="col-sm-2">배송일</label>
+	    <div class="col-sm-3">
+		    <input name="shippingDate" type="date" min="" class="form-control" />(yyyy/mm/dd)
+	    </div>
+	</div>
+           
+    <div class="form-group row">
+	   <label class="col-sm-2">국가명</label>
+        <div class="col-sm-5">
+            <select name="nation" >
+                <option value="Korea">대한민국</option>
+                <option value="China">중국</option>
+                <option value="Japan">일본</option>
+                <option value="America">미국</option>
+              </select>
+        </div>
+	</div>
 	 <div class="form-group row">
 	     <label class="col-sm-2">우편번호</label>
 	     <div class="col-sm-3">
-	 	    <input type="text" id="sample6_postcode" placeholder="우편번호">
+	 	    <input type="text" id="sample6_postcode" placeholder="우편번호"> 
             <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
 	     </div>
 	 </div>
