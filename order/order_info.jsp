@@ -1,4 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+
+
 <html>
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -10,7 +14,6 @@
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
     <script src="../js/order_popup.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="../js/order_date.js"></script>
     <title>배송 정보</title>
 </head>
 <body>
@@ -53,11 +56,17 @@
 		<input name="addressName" type="text" class="form-control" />
 	     </div>
 	</div> -->
-    
+
+    <%
+	Date date = new Date();
+	SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
+	String strDate = simpleDate.format(date);
+    %>
+    오늘 날짜는 <%=strDate%>입니다.
     <div class="form-group row">
 	    <label class="col-sm-2">배송일</label>
 	    <div class="col-sm-3">
-		    <input name="shippingDate" type="date" min="" class="form-control" />(yyyy/mm/dd)
+		    <input name="shippingDate" type="date" min="<%=strDate%>" class="form-control" />(yyyy/mm/dd)
 	    </div>
 	</div>
            
