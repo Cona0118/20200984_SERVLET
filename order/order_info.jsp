@@ -59,10 +59,10 @@
 
     <%
 	Date date = new Date();
+    date.setDate(date.getDate() + 1);
 	SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
 	String strDate = simpleDate.format(date);
     %>
-    오늘 날짜는 <%=strDate%>입니다.
     <div class="form-group row">
 	    <label class="col-sm-2">배송일</label>
 	    <div class="col-sm-3">
