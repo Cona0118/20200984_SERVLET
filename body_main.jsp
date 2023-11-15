@@ -22,7 +22,7 @@
 <div class="card bg-dark text-white">
     <img src="image/top.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
-        <h5 class="card-title">여름세일 이벤트</h5>
+        <h5 class="card-title">할로윈 세일 이벤트</h5>
         <p class="card-text">출처 : steam</p>
     </div>
 </div>
@@ -55,7 +55,7 @@
             </div>
             <h3><%=product.getPname()%></h3> 
             <p><%=product.getDescription()%>
-            <p><%=product.getUnitPrice()%>
+            <p><%=product.getUnitPrice()%> 원
             <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
         </div>
         <%
