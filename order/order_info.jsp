@@ -59,21 +59,21 @@
 
     <%
 	Date date = new Date();
-    date.setDate(date.getDate() + 1);
+    date.setDate(date.getDate() + 2);
 	SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
 	String strDate = simpleDate.format(date);
     %>
     <div class="form-group row">
-	    <label class="col-sm-2">배송일</label>
+	    <label class="col-sm-2">배송희망일</label>
 	    <div class="col-sm-3">
-		    <input name="shippingDate" type="date" min="<%=strDate%>" class="form-control" />(yyyy/mm/dd)
+		    <input name="shippingDate" type="date" min="<%=strDate%>" class="form-control" />
 	    </div>
 	</div>
            
     <div class="form-group row">
 	   <label class="col-sm-2">국가명</label>
         <div class="col-sm-5">
-            <select name="nation" >
+            <select name="country" >
                 <option value="Korea">대한민국</option>
                 <option value="China">중국</option>
                 <option value="Japan">일본</option>
@@ -84,14 +84,14 @@
 	 <div class="form-group row">
 	     <label class="col-sm-2">우편번호</label>
 	     <div class="col-sm-3">
-	 	    <input type="text" id="sample6_postcode" placeholder="우편번호"> 
+	 	    <input type="text" id="sample6_postcode" name="zipCode" placeholder="우편번호"> 
             <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
 	     </div>
 	 </div>
     	<div class="form-group row">
 	   <label class="col-sm-2">주소</label>
 	     <div class="col-sm-5">
-            <input type="text" id="sample6_address" placeholder="주소"><br>
+            <input type="text" id="sample6_address" name="addressName" placeholder="주소"><br>
             <input type="text" id="sample6_detailAddress" placeholder="상세주소">
             <input type="text" id="sample6_extraAddress" placeholder="참고항목">
 	     </div>
