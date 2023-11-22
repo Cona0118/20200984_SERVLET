@@ -24,7 +24,7 @@
 <div class="card bg-dark text-white">
     <img src="image/top.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
-        <h5 class="card-title">여름세일 이벤트</h5>
+        <h5 class="card-title">할로윈 이벤트</h5>
         <p class="card-text">출처 : steam</p>
     </div>
 </div>
