@@ -14,7 +14,7 @@
 	</div>
     
     <div style="padding-left:20px;">
-        <img src="image\gampang_logo.png" class="img-fluid" alt="main_image">
+        <img src="../image/gampang_logo.png" class="img-fluid" alt="main_image">
     </div>
     
 	<div class="container">

@@ -21,7 +21,7 @@
 
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
-	int unitPrice = multi.getParameter("unitPrice");
+	String unitPrice = multi.getParameter("unitPrice");
 	String description = multi.getParameter("description");
 	String manufacturer = multi.getParameter("manufacturer");
 	String category = multi.getParameter("category");
@@ -63,7 +63,7 @@
 
 	// dao.addProduct(newProduct);
 
-    String sql = "insert into product values(?,?,?,?,?,?,?,?,?)";
+    String sql = "insert into product values(?,?,?,?,?,?,?,?)";
 	pstmt = conn.prepareStatement(sql); // 쿼리문 몸체만 넣기
 	pstmt.setString(1, productId); // 각 필드 설정 - ? 순서대로
 	pstmt.setString(2, name);
