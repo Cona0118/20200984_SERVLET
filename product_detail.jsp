@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="dto.Product"%>
+<%@ page import="dao.ProductRepository"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*" %>
+<%@ page import="java.sql.*"%>
+<%@ include file="db/db_conn.jsp"%>
 <%@ page errorPage = "exception/product_not_found.jsp" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
@@ -31,27 +34,33 @@
             <h1 class="display-3">상품 상세 정보</h1>
         </div>
     </div>
-    <%
-		String id = request.getParameter("id");
-		Product product = productDAO.getProductById(id);
-	%>
     <div class="container">
         <div class="row">
+            <%
+			// for (int i = 0; i < listOfProducts.size(); i++) {
+			// 	Product product = listOfProducts.get(i);
+            String ID = request.getParameter("id");
+            String sql = "select * from product where p_id = ?"; // 조회
+            pstmt = conn.prepareStatement(sql); // 연결 생성
+            pstmt.setString(1,ID);
+            rs = pstmt.executeQuery(); // 쿼리 실행
+            while (rs.next()) { // 결과 ResultSet 객체 반복
+		    %>
             <div class="col-md-6">
-                <h3><%=product.getPname()%></h3>
-                <p><%=product.getDescription()%>
-                    <p><b>게임 코드 : </b><span class="badge badge-danger"> <%=product.getProductId()%></span>
-                    <p><b>개발사</b> : <%=product.getManufacturer()%>
-                    <p><b>장르</b> : <%=product.getCategory()%>
-                    <p><b>유저 수</b> : <%=product.getUserInGame()%>    
-                    <h4><%=product.getUnitPrice()%>원</h4>
-                <p> <form name=“addForm” action="cart/product_cart_add.jsp?id=<%=product.getProductId()%>" method="post">
-			        <a href="cart/product_cart_add.jsp?id=<%=product.getProductId()%>" class="btn btn-info" onclick="addToCart()"> 상품 주문 &raquo;</a> 
+                <h3><%=rs.getString("p_name")%></h3>
+                <p><%=rs.getString("p_description")%>
+                    <p><b>게임 코드 : </b><span class="badge badge-danger"> <%=rs.getString("p_id")%></span>
+                    <p><b>개발사</b> : <%=rs.getString("p_manufacturer")%>
+                    <p><b>장르</b> : <%=rs.getString("p_category")%>
+                    <p><b>유저 수</b> : <%=rs.getString("p_userInGame")%>
+                    <h4><%=rs.getString("p_unitPrice")%>원</h4>
+                <p> <form name=“addForm” action="cart/product_cart_add.jsp?id=<%=rs.getString("p_id")%>" method="post">
+			        <a href="cart/product_cart_add.jsp?id=<%=rs.getString("p_id")%>" class="btn btn-info" onclick="addToCart()"> 상품 주문 &raquo;</a> 
 			        <a href="../cart/product_cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
 	            </form>
 
                                     <div class="card bg-dark text-white">
-                                        <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
+                                        <img src="image/product/<%=rs.getString("p_filename")%>" class="card-img" alt="...">
                                         <div class="card-img-overlay">
                                             <h5 class="card-title">게임 이미지 원본</h5>
                                             <p class="card-text">출처 : 구글 검색</p>
@@ -62,6 +71,15 @@
         </div>
         <hr>
     </div>
+     <%
+			} // 반복문 끝난 이후 db 연결 종료	
+		if (rs != null)
+			rs.close();
+ 		if (pstmt != null)
+ 			pstmt.close();
+ 		if (conn != null)
+			conn.close();
+	%>
     <%@ include file="footer.jsp" %>
 </body>
 
