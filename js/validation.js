@@ -65,17 +65,6 @@ function CheckMemberInfo() {
     var phone = document.getElementById("phone");
     var address = document.getElementById("address");
 
-	function check(regExp, e, msg) {
-
-		if (regExp.test(e.value)) {
-			return true;
-		}
-		alert(msg);
-		e.select();
-		e.focus();
-		return false;
-	}
-
 	 document.newMember.submit()
 }
 
