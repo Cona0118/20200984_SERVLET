@@ -29,7 +29,7 @@
 		</form-login-config>
 	</login-config>
     
-    <error-page>
+    <error-page> <!-- index.jsp 에러페이지 설정 -->
 		<error-code>404</error-code>
 		<location>/exception/main_server_downtime.jsp</location>
 	</error-page>
