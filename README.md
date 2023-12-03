@@ -5,7 +5,7 @@
 ### 03주차 09월 13일 : 쇼핑몰 메인 페이지 모듈화 완료, forward 액션 태그 확인 완료  <br/> + 연습문제 : 날짜 출력 소스 분리 완료 ( [코드](https://github.com/Cona0118/20200984_SERVLET/blob/main/WEB-INF/src/example/ShopTime.java) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week3.PNG) )
 ### 04주차 09월 20일 : 휴강
 ### 05주차 09월 27일 : 쇼핑몰 상품 목록 페이지 추가, 상품 이미지 추가
-### 06주차 10월 04일 : 쇼핑몰 상품 상세 페이지 추가, 에러페이지 추가 <br/> + 연습문제 : 메인페이지 404 에러페이지 추가 완료 ( [코드](https://github.com/Cona0118/20200984_SERVLET/blob/main/WEB-INF/web.xml#L32) )
+### 06주차 10월 04일 : 쇼핑몰 상품 상세 페이지 추가, 에러페이지 추가 <br/> + 연습문제 : 메인페이지 404 에러페이지 추가 완료 ( [코드(32~35)](https://github.com/Cona0118/20200984_SERVLET/blob/main/WEB-INF/web.xml#L32) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week6.PNG) )
 ### 07주차 10월 11일 : 쇼핑몰 상품 및 상품 이미지 등록 추가 
 ### 08주차 10월 18일 : 중간고사 <br/>
 ### <br/>
