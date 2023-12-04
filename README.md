@@ -19,6 +19,3 @@
 
 ### <br/>
 ### 추가 구현 : 상품 세부정보 DB 연동
-
-<br/> + 연습문제 : 주소 api 추가 ([코드()](https://github.com/Cona0118/20200984_SERVLET/blob/main/cart/product_cart_remove.jsp#L22-L29) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week8_3.png))
-
