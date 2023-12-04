@@ -19,7 +19,7 @@
 
     ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
     Product goodsQnt = new Product();
-    if (cartList != null){ // 카트리스트가 존재 하면
+    if (cartList != null){ // 카트리스트가 존재 하면 삭제 처리 진행
         for (int i = 0; i < cartList.size(); i++) { // 상품리스트 하나씩 출력하기
             goodsQnt = cartList.get(i);
             if (goodsQnt.getProductId().equals(id)) {
