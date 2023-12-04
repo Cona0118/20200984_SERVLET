@@ -56,8 +56,9 @@
 		<input name="addressName" type="text" class="form-control" />
 	     </div>
 	</div> -->
-
-    <%
+           
+    <!-- 배송희망일 = 오늘 + 2일 부터 선택 가능 -->
+    <%   
 	Date date = new Date();
     date.setDate(date.getDate() + 2);
 	SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
