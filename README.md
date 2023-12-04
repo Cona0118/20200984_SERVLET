@@ -16,7 +16,7 @@
 ### 13주차 11월 22일 : 쇼핑몰 상품 수정 페이지 추가 <br/> + 연습문제 : 상품 삭제 기능 추가 ( [코드](https://github.com/Cona0118/20200984_SERVLET/blob/main/admin/product_delete.jsp) / [결과1](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week13_1.png), [결과2](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week13_2.png) )
 ### 14주차 11월 29일 : 쇼핑몰 게시판 추가 
 <br/> + 연습문제 : 
-<br/> + 연습문제 : ( [코드(23~25)](https://github.com/Cona0118/20200984_SERVLET/blob/main/admin/top_menu_ad.jsp#L23-L25) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week14_2.png) )
+<br/> + 연습문제 : 회원 보기(select), 수정(update), 삭제(delete) ( [코드(23~25)](https://github.com/Cona0118/20200984_SERVLET/blob/main/admin/top_menu_ad.jsp#L23-L25) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week14_2.png) )
 ### 15주차 12월 06일 : 기말고사
 
 ### <br/>
