@@ -12,7 +12,7 @@
 ### 09주차 10월 25일 : 상품 등록 입력값 필터링 추가, 로그인 기능 추가
 ### 10주차 11월 01일 : 세션 및 장바구니 기능 추가 <br/> + 연습문제 : 상단 로고 이미지 에러 수정 ([코드(16~18)](https://github.com/Cona0118/20200984_SERVLET/blob/main/cart/cart_top_menu.jsp#L16-L18) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week7_1.PNG) ) 
 ### 11주차 11월 08일 : 쇼핑몰 주문 처리 페이지 추가 
-<br/> + 연습문제 : 배송 날짜 제한기능 추가 ([코드(60~72)](https://github.com/Cona0118/20200984_SERVLET/blob/main/order/order_info.jsp#L60-L72) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week8_1.PNG) )
+<br/> + 연습문제 : 배송 날짜 제한기능 추가 ([코드(60~72)](https://github.com/Cona0118/20200984_SERVLET/blob/main/order/order_info.jsp#L60-L72) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/week8_1.png) )
 <br/> + 연습문제 : 국가 select box 추가 ([코드()]() / [결과]() )
 <br/> + 연습문제 : 주소 api 추가 ([코드()]() / [결과]() )
 ### 12주차 11월 15일 : 쇼핑몰 상품 관리 페이지(DB) 추가 <br/> + 연습문제 : 상품 리스트 추가, 비밀번호 변경(0591)
