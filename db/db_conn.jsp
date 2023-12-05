@@ -3,6 +3,7 @@
 <%
 	Connection conn = null;	
 	PreparedStatement pstmt = null;
+    PreparedStatement pstmt_2 = null;
 	ResultSet rs = null;
 	
 	try {
