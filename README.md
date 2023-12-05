@@ -21,3 +21,4 @@
 
 ### <br/>
 ### 추가 구현 : 상품 세부정보 DB 연동 ( [코드](https://github.com/Cona0118/20200984_SERVLET/blob/main/product_detail.jsp) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/ex1.png) )
+### 추가 구현 : footer 날짜 한국기준으로 변경 ( [코드1](https://github.com/Cona0118/20200984_SERVLET/blob/main/footer.jsp), [코드2](https://github.com/Cona0118/20200984_SERVLET/blob/main/WEB-INF/src/example/ShopTime.java) / [결과](https://github.com/Cona0118/20200984_SERVLET/blob/main/result_screenshot/ex2.png) )
